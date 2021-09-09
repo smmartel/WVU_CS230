@@ -1,41 +1,40 @@
-nav{
-    background-color:rgb(255, 255, 255)
-    
-}
-div{
-    background-color:rgb(255, 255, 255);
-}
-.nav-item3{
-    position:relative;
-    margin-left: 10%;
-}
-.nav-item1{
-    position:relative;
-    margin-left: 50px;
+.buttonH:hover{
+    background-color: rgb(243, 243, 243);
 
 }
-.nav-item4{
-    position: relative;
-    margin-left: 70%;
-    margin-top: 2px;
+.buttonCirc{border-radius: 50%;}
+.bi-list{
+    width: 32px;
+    height: 32px;
+}
+.nav-linkPad{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.searchWidth{
+    width: 40%;
+}
+.searchRadius{
+    border-radius: 50%;
+}
+.btn-lightgrey{
+    background-color: background-color;
+}
+.searchSubmit{
+    height: 40px;
+    width: 40px;
+    position: flex;
+    border-radius: 50%;
+}
+.searchSubmit:hover{
+    background-color: rgb(231, 231, 231);
     
 }
-.form-control{
-    float:left;
-    position: relative;
-    width:90%;
+.searchTab{
+    width: 63%; height: 50px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
 }
-.nav-item-dropdown{
-    position: relative;
-    margin-left:0%;
-    margin-top: 1px;
-}
-.input-group{
-    float:left;
-    position: relative;
-    width: 650px;
-}
-.nav-link{
-    position: relative;
-    padding-top: 3px;
+.btnHover:hover{
+    background-color: rgb(231, 231, 231);
 }

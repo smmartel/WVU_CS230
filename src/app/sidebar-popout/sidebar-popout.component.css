@@ -1,0 +1,113 @@
+
+.toggleButton{
+    position: absolute; 
+    top:6px;
+    padding-left: 5px;
+}
+.buttonH:hover{
+    background-color: rgb(243, 243, 243);
+
+}
+.buttonCirc{border-radius: 50%;}
+
+.nav_list{
+    padding-left: 0;
+    margin: none;
+}
+
+.sidebar{
+    position:fixed;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    width:72px;
+    transition: all 0.5s ease;
+    background-color: rgb(255, 255, 255);
+}
+.sidebar.collapse{
+    position:fixed;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    width:72px;
+    display: block;
+    transition: all 0.5s ease;
+}
+.sidebar.collapse.show{
+    width: 240px;
+    background-color: rgb(255, 255, 255);
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+    position: relative;
+    height: 40px;
+    width: 80%;
+    list-style: none;
+    padding-left: 10px;
+    line-height: 50px;
+
+}
+
+.sidebar.collapse.show ul li:hover{
+    background: rgb(243, 243, 243);
+    transition: all 0.4s ease;
+    border-top-right-radius: 50px 50px;
+    border-bottom-right-radius: 50px 50px;
+}
+.sidebar ul li a{
+    color: rgb(36, 36, 36);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar ul li a span{
+    color: rgb(36, 36, 36);
+    display: none;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar.collapse.show ul li a span{
+    color: rgb(36, 36, 36);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+}
+.sidebar ul li a i{
+    height: 40px; 
+    min-width: 40px;
+    border-radius: 12px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+}
+.sidebar ul li a i:hover{
+    height: 40px; 
+    min-width: 40px;
+    border-radius: 12px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    border-radius: 50%;
+}
+.Rooms_area{
+    border-top-style: solid;
+    border-color:rgb(230, 230, 230);
+    height:160px;
+
+}
+.Chat_Area{
+    border-top-style: solid;
+    border-color:rgb(230, 230, 230);
+    height:160px;
+}
+.Meet_area{
+    border-top-style: solid;
+    border-color:rgb(230, 230, 230);
+}
+

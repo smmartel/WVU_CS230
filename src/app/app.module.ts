@@ -3,14 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-
+import { SidebarPopoutComponent } from './sidebar-popout/sidebar-popout.component';
+import { AccrodianComponent } from './accrodian/accrodian.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    SidebarPopoutComponent,
+    AccrodianComponent,
   ],
   imports: [
     BrowserModule
