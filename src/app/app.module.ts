@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarPopoutComponent } from './sidebar-popout/sidebar-popout.component';
 import { AccrodianComponent } from './accrodian/accrodian.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { AccrodianComponent } from './accrodian/accrodian.component';
     HeaderComponent,
     SidebarPopoutComponent,
     AccrodianComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule
