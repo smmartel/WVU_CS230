@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { Email } from './email.model';
+import { mock_emails } from './mock-emails';
 
 @Component({
   selector: 'app-accrodian',
   templateUrl: './accrodian.component.html',
   styleUrls: ['./accrodian.component.css']
 })
-export class AccrodianComponent implements OnInit {
-  email_title:string = "Click Here for BIG MONEY";
-  email_title2:string = "Not a Scam click here!";
-  constructor() { }
-
-  ngOnInit(): void {
+export class AccrodianComponent {
+  emails: Email[] = [];
+  constructor() {
+    for (var email of mock_emails) {
+      this.emails.push(new Email(email));
+    }
   }
-
 }

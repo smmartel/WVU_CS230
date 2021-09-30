@@ -12,6 +12,7 @@ import { StarredComponent } from './starred/starred.component';
 import { SentComponent } from './sent/sent.component';
 import { SnoozedComponent } from './snoozed/snoozed.component';
 import { AppRoutingModule } from './app-routing.module';
+import { EmailLayout } from './accrodian/email-layout.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AppRoutingModule } from './app-routing.module';
     StarredComponent,
     SentComponent,
     SnoozedComponent,
+    EmailLayout
   ],
   imports: [
     BrowserModule,
