@@ -13,6 +13,8 @@ import { SentComponent } from './sent/sent.component';
 import { SnoozedComponent } from './snoozed/snoozed.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EmailLayout } from './accrodian/email-layout.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,14 @@ import { EmailLayout } from './accrodian/email-layout.component';
     StarredComponent,
     SentComponent,
     SnoozedComponent,
-    EmailLayout
+    EmailLayout,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
