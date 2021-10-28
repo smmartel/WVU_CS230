@@ -11,10 +11,26 @@
     <div class="content">
     <ul class="nav_list">
         <li>
-            <a href="#">
-                <i class="bi-pencil"></i>
-                <span class="link_name">Compose</span>
-            </a>
+                <div class="dropdown">
+                    <a class="btn p-0 dropdown" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi-pencil"></i>
+                        <span class="link_name">Compose</span>
+                    </a>
+                    <div class="dropdown-menu" style="width: 500px;">
+                        <form #postForm='ngForm' (ngSubmit)="onUpdateUserInfo(postForm.value)" class="px-4">
+                          <div class="p-0">
+                            <input type="text" class="form-control" id="Author1" placeholder="To" ngModel name= "author">
+                          </div>
+                          <div class="p-0">
+                            <input type="text" class="form-control" id="Subject1" placeholder="Subject" ngModel name= "subject">
+                          </div>
+                          <div class="p-0">
+                            <textarea class="form-control" id="Content1" rows="3" ngModel name= "content"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                      </div>
+                  </div>
         </li>
         <li>
             <a routerLink="/inbox">

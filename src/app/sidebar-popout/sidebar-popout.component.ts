@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Email } from '../accrodian/email.model';
+import { EmailService } from '../accrodian/emails.service';
 
 @Component({
   selector: 'app-sidebar-popout',
@@ -7,7 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarPopoutComponent implements OnInit {
 
-  constructor() { }
+  count: number = 0;
+  constructor(private emailFormService: EmailService){
+
+  }
+  onUpdateUserInfo(data: Email){
+   
+    this.emailFormService.getEmails().subscribe(data => {
+      this.count = data.length;
+      console.log(this.count);
+    })
+    
+    this.emailFormService.sendEmail(data, this.count).subscribe(data => {
+      console.log("Updated info sent to backend");
+    })
+  }
 
   ngOnInit(): void {
   }

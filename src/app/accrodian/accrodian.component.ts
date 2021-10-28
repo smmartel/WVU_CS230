@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Email } from './email.model';
 import { EmailService } from './emails.service';
-import { mock_emails } from './mock-emails';
 
 @Component({
   selector: 'app-accrodian',
@@ -10,19 +9,29 @@ import { mock_emails } from './mock-emails';
 })
 export class AccrodianComponent implements OnInit{
   emails: Email[] = [];
-  
+
+
 
   constructor(private emailService: EmailService) {
     
   }
+  
   ngOnInit(): void{
-    this.emailService.getEmails().subscribe((data: Email[]) => {
+    
+    
+    this.emailService.getEmails().subscribe((data: any) => {
       console.log(data);
       this.emails = data;
+      
     })
-
+    
     for (var email of this.emails) {
       this.emails.push(new Email(email));
     }
+    // this.emailService.sendEmail().subscribe(data => {
+    //   console.log(data);
+    // })
+    
   }
+  
 }

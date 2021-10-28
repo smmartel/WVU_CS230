@@ -110,4 +110,9 @@
     border-top-style: solid;
     border-color:rgb(230, 230, 230);
 }
+.menu_position{
+    position:fixed;
+    bottom: 0;
+    right: 0;
+}
 
