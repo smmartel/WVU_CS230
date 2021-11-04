@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseService } from './database.service';
 import { Email } from './email.model';
 import { EmailService } from './emails.service';
 
@@ -12,18 +13,22 @@ export class AccrodianComponent implements OnInit{
 
 
 
-  constructor(private emailService: EmailService) {
+  constructor(private emailService: EmailService, private dbService:DatabaseService) {
     
   }
   
   ngOnInit(): void{
     
-    
-    this.emailService.getEmails().subscribe((data: any) => {
-      console.log(data);
+    this.dbService.showData().subscribe((data: Email[]) =>{
+      console.log("data recieved");
       this.emails = data;
+  })
+    // this.emailService.getEmails().subscribe((data: any) => {
+    //   console.log(data);
+    //   this.emails = data;
       
-    })
+    // })
+   
     
     for (var email of this.emails) {
       this.emails.push(new Email(email));

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseService } from '../accrodian/database.service';
 import { Email } from '../accrodian/email.model';
 import { EmailService } from '../accrodian/emails.service';
 
@@ -11,7 +12,7 @@ export class SidebarPopoutComponent implements OnInit {
 
   count: number = 0;
   constructor(private emailFormService: EmailService){
-
+    
   }
   onUpdateUserInfo(data: Email){
    
