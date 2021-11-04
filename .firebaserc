@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "app-603c9": {
+      "hosting": {
+        "gmail": [
+          "app-603c9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "app-603c9"
+  }
+}

@@ -109,6 +109,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "gmail:build:production",
+            "firebaseProject": "app-603c9",
+            "firebaseHostingSite": "app-603c9"
+          }
         }
       }
     }
