@@ -14,7 +14,9 @@ export class AccrodianComponent implements OnInit{
 
 
   constructor(private emailService: EmailService, private dbService:DatabaseService) {
-    
+    dbService.showData().subscribe((data: Email[])=>{
+      console.log(data);
+    })
   }
   
   ngOnInit(): void{

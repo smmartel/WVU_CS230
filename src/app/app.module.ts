@@ -19,6 +19,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
+import { SignupComponent } from './sign-in/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     SentComponent,
     SnoozedComponent,
     EmailLayout,
-    UserInfoComponent
+    UserInfoComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
